@@ -4,6 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+.clean{
+    clear: both;
+}
+.text-white{
+    color: white !important;
+    
+}
 
 html {
     font-family: Helvetica, sans-serif;
@@ -66,7 +73,6 @@ html {
 #header .search-btn{
     float: right;
     padding: 0 21px;
-    cursor: pointer;
 }
 #header .search-btn:hover{
     background-color: rgb(206, 5, 5);
@@ -104,10 +110,123 @@ html {
 }
 
 #content{
-    height: 500px;
-    background-color:rgba(93, 206, 191, 0.384)
+   
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin: 0 auto;
 }
 
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0;
+    font-style: italic;
+    opacity: 0.8;
+}
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 48px;
+    
+}
+#content .member-item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+
+}
+#content .member-name{
+    font-size: 15px;
+
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+
+}
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+}
+.sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 20px;
+}
+.quantity{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 9.5px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -4px;
+}
+
+.place-list{   
+    margin: 32px 0;
+
+}
+
+.place-item{
+    background-color: #fff;
+    width: 33.3333%;
+}
+
+.place-img{
+    width: 100%;
+}
+
+.place-body{
+    padding: 16px;
+}
+
+.place-heading{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.place-time{
+    margin: 15px 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.place-desc{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.place-buy-btn{
+    text-decoration: none;
+    background-color: #000;
+    font-size: 15px;
+    padding: 8px 16px;
+    display: inline-block;
+}
 #footer{
     
 }
