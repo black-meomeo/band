@@ -9,10 +9,44 @@
 }
 .text-white{
     color: white !important;
-    
 }
-
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.pull-right{
+    float: right !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.3333%;
+}
+.text-center{
+    text-align: center;
+}
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, sans-serif;
 }
 #main{
@@ -114,7 +148,7 @@ html {
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin: 0 auto;
 }
 
@@ -140,14 +174,10 @@ html {
     margin-top: 48px;
     
 }
-#content .member-item{
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
 
-}
 #content .member-name{
     font-size: 15px;
+    margin: 20px 0;
 
 }
 #content .member-img{
@@ -187,46 +217,97 @@ html {
 }
 
 .place-list{   
-    margin: 32px 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
 
-}
-
-.place-item{
-    background-color: #fff;
-    width: 33.3333%;
 }
 
 .place-img{
     width: 100%;
+    display: block;
 }
 
 .place-body{
     padding: 16px;
+    background-color: #fff;
+    font-size: 15px;
 }
 
 .place-heading{
-    margin: 15px 0;
     font-size: 15px;
+    font-weight: 600;
 }
 
 .place-time{
-    margin: 15px 0;
-    font-size: 15px;
+    margin-top: 15px;
     opacity: 0.8;
 }
 
 .place-desc{
-    margin: 15px 0;
-    font-size: 15px;
+    margin-top: 15px;
+    line-height: 1.4;
 }
 
-.place-buy-btn{
+.btn{
     text-decoration: none;
     background-color: #000;
     font-size: 15px;
-    padding: 8px 16px;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+/* contact */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-infor i[class*="ti"]{
+    width: 30px;
     display: inline-block;
 }
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+.map-section img {
+    width: 100%;
+}
+
 #footer{
-    
+    padding: 64px 16px;
+    text-align: center;
+}
+.socials-list{
+    font-size: 24px;
+}
+.socials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+.copyright{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.copyright a{
+    color: rgba(0, 0, 0, 0.5);
 }
