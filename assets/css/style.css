@@ -41,7 +41,7 @@
 }
 .col-3{
     width: 33.3333%;
-}
+} 
 .text-center{
     text-align: center;
 }
@@ -78,6 +78,7 @@ html {
    line-height: 46px;
    padding: 0 24px;
     display: inline-block;
+    width: 100%;
 }
 #nav .subnav li:hover a,
 #nav > li:hover > a{
@@ -104,6 +105,13 @@ html {
     line-height: 38px;
     padding: 0 16px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -112,6 +120,11 @@ html {
     background-color: rgb(206, 5, 5);
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#header .mobile-menu-btn,
 #header .search-icon{
     color: white;
     font-size: 20px;
@@ -150,6 +163,8 @@ html {
     width: 800px;
     padding: 64px 0 112px;
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -217,7 +232,7 @@ html {
 }
 
 .place-list{   
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 32px;
     
 
@@ -258,6 +273,7 @@ html {
     margin-top: 15px;
     color: #fff;
     border: none;
+    text-align: center;
 }
 .btn:hover{
     cursor: pointer;
